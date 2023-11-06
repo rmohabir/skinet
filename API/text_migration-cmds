@@ -1,0 +1,3 @@
+dotnet ef database drop -p infrastructure -s API/
+dotnet ef migrations remove -p infrastructure -s API
+dotnet ef migrations add initialCreate -p Infrastructure -s API -o Data/Migrations
